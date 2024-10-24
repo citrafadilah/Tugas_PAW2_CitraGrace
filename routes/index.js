@@ -10,4 +10,17 @@ router.get('/about', (req, res) => {
   res.render('about');
 });
 
+router.get('/contact', (req, res) => {
+  res.render('contact');
+});
+
+router.get('/client', (req, res) => {
+  res.render('client');
+});
+
+router.get('/products', (req, res) => {
+  res.render('products');
+});
+
+
 module.exports = router;
