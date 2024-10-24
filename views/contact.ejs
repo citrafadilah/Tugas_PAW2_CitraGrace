@@ -47,13 +47,13 @@
                   <a href="/contact">Contact</a>
                </div>
                <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
-               <a class="logo" href="/"><img src="images/logo.png"></a></a>
-               <form class="form-inline ">
+               <a class="h1" href="/"><strong>Make Up</a></a>
+                  <form class="form-inline ">
                   <div class="login_text">
                      <ul>
-                        <li><a href="#"><img src="images/user-icon.png"></a></li>
+                        <!-- <li><a href="#"><img src="images/user-icon.png"></a></li>
                         <li><a href="#"><img src="images/bag-icon.png"></a></li>
-                        <li><a href="#"><img src="images/search-icon.png"></a></li>
+                        <li><a href="#"><img src="images/search-icon.png"></a></li> -->
                      </ul>
                   </div>
                </form>
@@ -66,21 +66,35 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6">
-                  <h1 class="contact_taital">Get In Touch</h1>
-                  <p class="contact_text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  eu </p>
+                  <h1 class="contact_taital">Contact</h1>
+                    <p class="contact_text">If you have any questions, feel free to reach out to us. We are here to help you!</p>
+                    <form action="/submit_contact" method="POST">
+                      <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                      </div>
+                      <div class="contact_bt"><a href="#">Submit</a></div>
+                    </form>
                </div>
                <div class="col-md-6">
                   <div class="contact_main">
-                     <div class="contact_bt"><a href="#">Contact Form</a></div>
-                     <div class="newletter_bt"><a href="#">Newletter</a></div>
+                     <!-- <div class="newletter_bt"><a href="#">Newletter</a></div> -->
                   </div>
                </div>
             </div>
          </div>
          <div class="map_main">
-            <div class="map-responsive">
+            <!-- <div class="map-responsive">
                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Universitas+MDP" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-            </div>
+            </div> -->
          </div>
       </div>
       <!-- contact section end -->
